@@ -1,4 +1,4 @@
-#Montar proyecto NodeJS con Typescript
+# Montar proyecto NodeJS con Typescript
 
 ```sh
 mkdir ts-node
