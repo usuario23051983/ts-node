@@ -33,7 +33,7 @@ Editamos el fichero tsconfig.json con las siguientes propiedades:
 
 ```sh
 mkdir src
-echo "console.log('Hola!')" > index.ts
+echo "console.log('Hola!')" > app.ts
 ```
 
 Editamos el fichero package.json para incluir los siguientes scripts:
@@ -51,10 +51,10 @@ Ejecutamos:
 npm run build
 ```
 
-Ya tenemos el fichero /dist/index.js generado correctamente
+Ya tenemos el fichero /dist/app.js generado correctamente
 
 ```sh
-node /dist/index.js
+node /dist/app.js
 ```
 
 
@@ -81,6 +81,22 @@ npm install express
 npm install --save-dev @types/express
 ```
 
+Modificar app.ts
+
+```
+import express from 'express';
+
+const app = express();
+const port: number = Number(process.env.PORT) || 3000; // set our port
+app.get('/', (req, res) => {
+  res.send('OK!');
+});
+app.listen(port, () => {
+  console.log(`App listening on... ${port}`);
+});
+```
+
+
 ## ts-node-dev
 ```sh
 sudo npm i ts-node-dev -g
@@ -91,4 +107,8 @@ sudo npm i ts-node-dev -g
     ...
     "dev": "ts-node-dev --respawn src/index.ts"
 }
+```
+
+```sh
+npm run dev
 ```
