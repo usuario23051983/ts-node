@@ -6,5 +6,5 @@ app.get('/', (req, res) => {
   res.send('OK!');
 });
 app.listen(port, () => {
-  console.log(`App listening on... ${port}`);
+  console.log(`App listening on ${port}`);
 });

@@ -59,6 +59,9 @@ node /dist/app.js
 
 
 ## TSLint
+[TSlint](https://palantir.github.io/tslint/usage/cli/)
+Herramientta que se encarga de vigilar como escribimos nuestro código, en base a las reglas que hemos especificado, nos va a mostrar errores que estamos cometiendo en nuestro desarrollo.
+
 ```sh
 npm install -D tslint
 ./node_modules/.bin/tslint --init
@@ -98,6 +101,8 @@ app.listen(port, () => {
 
 
 ## ts-node-dev
+Reinicia el proceso del nodo de destino cuando cualquiera de los archivos requeridos cambia.
+
 ```sh
 sudo npm i ts-node-dev -g
 ```
