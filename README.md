@@ -59,7 +59,6 @@ node /dist/app.js
 
 
 ## TSLint
-[TSlint](https://palantir.github.io/tslint/usage/cli/)
 Herramientta que se encarga de vigilar como escribimos nuestro código, en base a las reglas que hemos especificado, nos va a mostrar errores que estamos cometiendo en nuestro desarrollo.
 
 ```sh
