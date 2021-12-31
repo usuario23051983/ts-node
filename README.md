@@ -57,3 +57,38 @@ Ya tenemos el fichero /dist/index.js generado correctamente
 node /dist/index.js
 ```
 
+
+## TSLINT
+```sh
+npm install -D tslint
+./node_modules/.bin/tslint --init
+```
+```
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "rules": {
+    "no-console": false
+  },
+  "rulesDirectory": []
+}
+```
+
+## ExpressJS
+```sh
+npm install express
+npm install --save-dev @types/express
+```
+
+## ts-node-dev
+```sh
+sudo npm i ts-node-dev -g
+```
+
+```
+"scripts": {
+    ...
+    "dev": "ts-node-dev --respawn src/index.ts"
+}
+```
