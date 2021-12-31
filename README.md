@@ -58,7 +58,7 @@ node /dist/index.js
 ```
 
 
-## TSLINT
+## TSLint
 ```sh
 npm install -D tslint
 ./node_modules/.bin/tslint --init
