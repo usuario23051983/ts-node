@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mongodb from 'mongodb';
-import { connect } from './db/mongodb';
+import { connect, db } from './db/mongodb';
 
 dotenv.config();
 
